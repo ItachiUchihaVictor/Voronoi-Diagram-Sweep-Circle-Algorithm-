@@ -22,7 +22,7 @@ void reshape (int width, int height);
 
 vorc::Voronoi * v;
 vorc::Vertices * ver; // vrcholy
-vorc::Vertices * dir; // smìry, kterými se pohybují
+vorc::Vertices * dir; // smÃ¬ry, kterÃ½mi se pohybujÃ­
 vorc::Edges * edg;	 // hrany diagramu
 
 double w = 10000;
@@ -41,7 +41,7 @@ int main (int argc, char **argv)
 	{
 
 		ver->push_back(new VPoint(2* w * (double)rand()/(double)RAND_MAX-w , 2*w * (double)rand()/(double)RAND_MAX-w ,0,0)); 
-		dir->push_back(new VPoint( (double)rand()/(double)RAND_MAX - 0.5, (double)rand()/(double)RAND_MAX - 0.5,0,0)); 
+	//	dir->push_back(new VPoint( (double)rand()/(double)RAND_MAX - 0.5, (double)rand()/(double)RAND_MAX - 0.5,0,0)); 
 	}
 	LARGE_INTEGER m_nFreq;
 	LARGE_INTEGER start,finish;
@@ -72,7 +72,7 @@ int main (int argc, char **argv)
 	glutInitDisplayMode (GLUT_SINGLE); // Set up a basic display buffer (only single buffered for now)
 	glutInitWindowSize (600, 600); // Set the width and height of the window
 	glutInitWindowPosition (100, 100); // Set the position of the window
-	glutCreateWindow ("You’re first OpenGL Window"); // Set the title for the window
+	glutCreateWindow ("Youâ€™re first OpenGL Window"); // Set the title for the window
 	
 //	glutTimerFunc(100, onEF, 0);
 	glutDisplayFunc(display); // Tell GLUT to use the method "display" for rendering
